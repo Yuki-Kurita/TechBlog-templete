@@ -1,0 +1,348 @@
+/* Page */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: #EEEEEE;
+}
+
+/* NAVIGATION */
+nav {
+  font-family: 'Caveat', cursive;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 0;
+  box-shadow: 0px 5px 0px #dedede;
+  text-align: center;
+}
+
+nav a{
+  color: #aaa;
+  font-weight: 800;
+}
+nav .container{
+  display: inline-flex;
+  justify-content: space-around;
+}
+nav .item{
+  border-top: 1px solid #aaaaaa;
+}
+
+/* header */
+.headcontainer .heading {
+  display:inline-flex;
+  width:100%;
+  font-family: 'Teko', sans-serif;
+  background: #fff;
+  padding: 10px 10px 10px 5px;
+  color: #BDB76B;
+  font-weight: bold;
+}
+.head-left{
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  font-size: 42px;
+  position:relative;
+}
+.head-left a{
+  color:#BDB76B;
+}
+.head-right{
+  margin-top:15px;
+  padding:0;
+  margin-right: 8px;
+  font-size: 28px;
+  position:relative;
+}
+
+.post{
+  margin-top:30px;
+}
+
+/* 記事のボックス */
+.box {
+    background-color: #FFF;
+    position: relative;
+    margin: 2em 0;
+    padding: 1em 1.5em;
+    border: solid 1.5px #BDB76B;
+    font-size:20px;
+}
+.box-title a{
+  color:#ffffff;
+}
+.post-title a{
+  color:#000000;
+}
+.box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 3px 11px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #BDB76B;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.post-title{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(transparent 90%, #FFEFD5 90%);
+}
+
+.post-content{
+    margin-top: 25px;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 16px;
+}
+.post-time{
+    margin-top:10px;
+    padding: 0;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+/* 記事のボタン */
+.square_btn {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 10px 5px 10px;
+    text-decoration: none;
+    color: #FFA000;
+    background: #fff1da;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #ffc25c;
+    color: #FFF;
+}
+
+/* 右側 */
+/* カテゴリー */
+
+.new-post, .category{
+  margin-top:15%;
+  font-size:14px;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.new-post a, .category a{
+  color:#333;
+}
+
+.new-post ul, .category ul{
+    padding: 0.5em;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.new-post ul li, .category ul li{
+    line-height: 1.5;
+    padding: 0.5em 0 0.5em 1.4em;
+    list-style-type: none!important;
+}
+.new-post ul li:last-of-type, .category ul li:last-of-type{
+  border-bottom: none;
+}
+.new-post ul li:before {/*リスト内のアイコン*/
+  	font-family: "Font Awesome 5 Free";
+  	content: "\f303";/*アイコン種類*/
+  	position: absolute;
+  	left : 0.5em; /*左端からのアイコンまで*/
+  	color: #BDB76B; /*アイコン色*/
+    font-weight: 900;
+}
+
+.category ul li:before {/*リスト内のアイコン*/
+  	font-family: "Font Awesome 5 Free";
+  	content: "\f02b";/*アイコン種類*/
+  	position: absolute;
+  	left : 0.5em; /*左端からのアイコンまで*/
+  	color: #BDB76B; /*アイコン色*/
+    font-weight: 900;
+}
+
+
+.new-post ul:after{/*タイトルタブ*/
+    font-size: 16px;
+    width:100%;
+  	background: #BDB76B;
+  	color: #fff;
+    left:-1px;
+    /* width:100%; */
+  	font-weight: bold;
+  	position: absolute;
+  	bottom: 100%;
+  	padding: 1px 7px;
+  	content: "最近の記事";/*タブの文字*/
+  	letter-spacing: 0.05em;/*字間*/
+    text-align: center;
+    box-shadow: 1px 1px 2px gray;
+  }
+
+.category ul:after {
+  font-size: 16px;
+  width:100%;
+  background: #BDB76B;
+  color: #fff;
+  left:-1px;
+  /* width:100%; */
+  font-weight: bold;
+  position: absolute;
+  bottom: 100%;
+  padding: 1px 7px;
+  content: "カテゴリー";/*タブの文字*/
+  letter-spacing: 0.05em;/*字間*/
+  text-align: center;
+  box-shadow: 1px 1px 2px gray;
+}
+
+/* footerデザイン */
+.footer{
+  margin-top: auto;
+  bottom:0;
+  padding: 22px 18px 22px 18px;
+  color:#fff;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  font-size:20px;
+  width:100%;
+  display:inline-flex;
+  background-color: #BDB76B;
+  justify-content: space-around;
+}
+.f-item{
+  color:#fff;
+}
+.footer a{
+  color:#fff;
+}
+
+.post{
+  margin-bottom: 40px;
+}
+
+/* viewページのデザイン */
+.post .post-frame{
+  background-color: #fff;
+  margin:0;
+  padding:20px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.post .time{
+  font-size:12px;
+  color:#A9A9A9;
+}
+
+.post .title{
+  font-size:24px;
+  font-weight: bold;
+}
+.post .tag {
+    font-size:15px;
+    margin-left: 80%;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #f8b500;
+    transition: .4s;
+  }
+.post .tag a{
+    color:#fff;
+}
+.post .tag:hover {
+    background:#d0af4c;
+}
+
+.post .content{
+  font-size:16px;
+  margin-top:20px;
+  color:#444444;
+  white-space: pre-wrap;
+}
+
+.post h3{
+  color:#333333;
+  margin:5px 0 28px 0;
+  font-size:20px;
+  border-bottom: solid 3px #ffaf58;
+  position: relative;
+  font-weight: 700px;
+}
+
+.post h3:after{
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #FFC7AF;
+  bottom: -3px;
+  width: 20%;
+}
+
+.post h4 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  font-size: 18px;
+  margin:5px 0;
+  font-weight: 600px;
+  }
+
+.content pre{
+  background-color: #696969;
+  font-size: 13px;
+  border-radius: 3px;
+  margin:10px 0 5px;
+  padding:10px;
+}
+
+.prettyprint ol.linenums > li {
+  list-style-type: decimal;
+}
+
+.post var{
+  padding: 0.2em 0.2em;
+  margin: 2em 0.5em;
+  color: #444444;/*文字色*/
+  background: #EEEEEE;
+  border: solid 1px #DDDDDD;/*線*/
+  border-radius: 4px;/*角の丸み*/
+}
+.content ul{
+  font-size:16px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.post .content .box{
+  font-size:16px;
+  padding: 5px 5px;
+  margin: 5px 10px;
+  border: solid 1.5px #888888;
+}
