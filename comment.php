@@ -1,8 +1,8 @@
 <?php
   // DB設定
-  define('DSN','mysql:host=mysql1.php.xdomain.ne.jp;dbname=otter3_sites;charset=utf8');
-  define('DB_USER','otter3_u');
-  define('DB_PASSWORD','28kialtoma');
+  define('DSN','mysql:host=YOUR_HOST_NAME;dbname=YOUR_DB_NAME;charset=utf8');
+  define('DB_USER','YOUR_USER_NAME');
+  define('DB_PASSWORD','YOUR_PASSWORD_NAME');
   $post_no = $error = $name = $content = '';
   if (@$_POST['submit']) {
     $post_no = strip_tags($_POST['post_no']);

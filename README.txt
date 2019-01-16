@@ -3,6 +3,10 @@ MySQL:5.0.95
 Apache:2.2.3
 PHP:7.1.x
 
+・各ファイルでDB設定をまず行ってください
+(hostname,dbname,username,passwordの設定)
+
+
 ・記事投稿のMarkdownの方法
 ->
 <h3>~</h3> : 大見出し

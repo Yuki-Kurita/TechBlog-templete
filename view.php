@@ -1,10 +1,10 @@
 <?php
   session_start();
   // DB設定
-  define('DSN','mysql:host=mysql1.php.xdomain.ne.jp;dbname=otter3_sites;charset=utf8');
-  define('DB_USER','otter3_u');
-  define('DB_PASSWORD','28kialtoma');
   //  記事の番号を取得
+  define('DSN','mysql:host=YOURS;dbname=YOURDATABASE;charset=utf8');
+  define('DB_USER','YOUR_USER_NAME');
+  define('DB_PASSWORD','YOUR_PASSWORD');
   $_SESSION['id'] = $_POST['id'];
   $post_no =  $_SESSION['id'];
   // PDO接続
