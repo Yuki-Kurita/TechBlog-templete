@@ -1,9 +1,8 @@
 <?php
   session_start();
-  // DB設定
-  define('DSN','mysql:host=mysql1.php.xdomain.ne.jp;dbname=otter3_sites;charset=utf8');
-  define('DB_USER','otter3_u');
-  define('DB_PASSWORD','28kialtoma');
+  define('DSN','mysql:host=YOUR_HOST_NAME;dbname=YOUR_DB_NAME;charset=utf8');
+  define('DB_USER','USER_NAME');
+  define('DB_PASSWORD','YOUR_PASSWORD');
   // PDO接続
   try{
     $pdo = new PDO(DSN,DB_USER,DB_PASSWORD);
